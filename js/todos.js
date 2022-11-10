@@ -35,7 +35,6 @@ const addTodo = async (e) => {
   e.preventDefault();
   let formdata = new FormData();
   formdata.append("todos", todo.value);
-  formdata.append("completed", 0);
   formdata.append("createdAt", new Date().toISOString());
 
   await sendHttpRequest("POST", "/AddTodo.php", formdata)

@@ -61,7 +61,7 @@ if (!$_SESSION['user_uid']) {
 </style>
 
 <body class="h-screen grid place-items-center bg-[#000]">
-    <div class="relative w-full md:max-w-md h-screen px-10 py-8 overflow-hidden">
+    <div class="relative w-full md:max-w-lg h-screen px-10 py-8 overflow-hidden">
         <header class="w-full flex justify-between items-center pb-5">
             <div class="leading-loose text-white">
                 <h1 class="text-3xl font-semibold">Hi <?php echo $_SESSION['username'] ?> </h1>

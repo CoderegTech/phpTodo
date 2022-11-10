@@ -4,16 +4,16 @@ class TodoContrl extends Dbh
 {
 
 	// Add Todo to Database
-	protected function AddTodo($user_uid, $todos, $completed, $createdAt)
+	protected function AddTodo($user_uid, $todos, $createdAt)
 	{
 
 		try {
 			// MYSQL Query
-			$sql = "INSERT INTO todos (user_uid, todos, completed, createdAt) VALUES (?, ?, ?, ?);";
+			$sql = "INSERT INTO todos (user_uid, todos, createdAt) VALUES (?, ?, ?);";
 
 			$stmt = $this->connect()->prepare($sql);
 
-			$execute = $stmt->execute([$user_uid, $todos, $completed, $createdAt]);
+			$execute = $stmt->execute([$user_uid, $todos, $createdAt]);
 
 			if ($execute) {
 				echo "Todo Added Successfully";

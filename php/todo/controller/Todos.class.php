@@ -3,9 +3,9 @@
 class Todos extends TodoContrl
 {
 	// Add Todos to Database
-	public function addTodos($user_uid, $todos, $completed, $createdAt)
+	public function addTodos($user_uid, $todos, $createdAt)
 	{
-		$this->AddTodo($user_uid, $todos, $completed, $createdAt);
+		$this->AddTodo($user_uid, $todos, $createdAt);
 	}
 
 	// Show Todos from Database

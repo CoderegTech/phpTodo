@@ -14,12 +14,10 @@ $method = $_SERVER['REQUEST_METHOD'];
 if ($method === "POST") {
 	session_start();
 
-
 	$user_uid = $_SESSION['user_uid'];
 	$todos = $_POST['todos'];
-	$completed = $_POST['completed'];
 	$createdAt = $_POST['createdAt'];
 
 	$todo = new Todos();
-	$todo->addTodos($user_uid, $todos, $completed, $createdAt);
+	$todo->addTodos($user_uid, $todos, $createdAt);
 }
