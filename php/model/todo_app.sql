@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 10, 2022 at 10:59 PM
+-- Generation Time: Nov 10, 2022 at 11:02 PM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 8.1.6
 
@@ -34,13 +34,6 @@ CREATE TABLE `todos` (
   `createdAt` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
---
--- Dumping data for table `todos`
---
-
-INSERT INTO `todos` (`id`, `user_uid`, `todos`, `createdAt`) VALUES
-(40, '636d7248ed6aa', 'heyyy', '2022-11-10 21:58:05');
-
 -- --------------------------------------------------------
 
 --
@@ -55,13 +48,6 @@ CREATE TABLE `users` (
   `password` varchar(100) NOT NULL,
   `profileImgName` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data for table `users`
---
-
-INSERT INTO `users` (`id`, `user_uid`, `username`, `email`, `password`, `profileImgName`) VALUES
-(11, '636d7248ed6aa', 'reygun', 'reygun@gmail.com', '$2y$10$OdVShlmya1AFI9HxXU5mvOr05GFDw4Bw9LcuBxFz4bq6sKQ8sIhKq', '636d7248f3733.jpeg');
 
 --
 -- Indexes for dumped tables
